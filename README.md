@@ -54,52 +54,58 @@ AI recommends. Humans authorize. Systems execute. Verification confirms. Audit r
 ## Platform Screenshots
 
 ### 01 — Operational Command Center
+
 > Consolidated view of incidents, risks, compliance posture, automation activity, and operational signals.
 
-![Operational Command Center](docs/screenshots/01-command-center.png)
+![Operational Command Center](./docs/screenshots/overview-command-center.png)
 
 ---
 
 ### 02 — Incident Command Center
+
 > Structures investigations around evidence, AI hypotheses, risk assessment, human authorization, controlled containment, verification, and auditability.
 
-![Incident Command Center](docs/screenshots/02-incident-command.png)
+![Incident Command Center](./docs/screenshots/incident-command-center.png)
 
 ---
 
 ### 03 — Enterprise Risk Register
+
 > Centralized risk posture management — likelihood-impact assessment, treatment ownership, control relationships, review cadence, and residual-risk tracking.
 
-![Enterprise Risk Register](docs/screenshots/03-risk-register.png)
+![Enterprise Risk Register](./docs/screenshots/risk-register.png)
 
 ---
 
 ### 04 — Compliance & GRC Control Center
+
 > Connects controls, evidence, gaps, enterprise risks, remediation actions, and audit history across SOC 2, ISO 27001, NIST CSF, HIPAA, and GDPR.
 
-![Compliance & GRC](docs/screenshots/04-compliance-grc.png)
+![Compliance & GRC Control Center](./docs/screenshots/compliance-center.png)
 
 ---
 
 ### 05 — Controlled Response & Automation Center
+
 > Governs playbook execution through authorization gates, sequential execution, verification requirements, rollback controls, and audit logging.
 
-![Automation Center](docs/screenshots/05-automation.png)
+![Controlled Response & Automation Center](./docs/screenshots/playbooks-automation.png)
 
 ---
 
 ### 06 — Decisions & Governance
+
 > System of record for consequential decisions, ADRs, approvals, trade-offs, AI reasoning provenance, and governance lifecycle events.
 
-![Decisions & Governance](docs/screenshots/06-decisions.png)
+![Decisions & Governance](./docs/screenshots/decisions-governance.png)
 
 ---
 
 ### 07 — Google Workspace Integration
+
 > Governed bidirectional synchronization across a standardized 10-tab Google Sheets workbook — with conflict detection, import previews, and data-loss safeguards.
 
-![Google Workspace Integration](docs/screenshots/07-google-workspace.png)
-
+![Google Workspace Integration](./docs/screenshots/google-workspace-sync.png)
 ---
 
 ## Architecture

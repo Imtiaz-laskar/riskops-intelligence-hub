@@ -45,7 +45,7 @@ AI recommends. Humans authorize. Systems execute. Verification confirms. Audit r
 └──────────┬──────────┘
            ↓
 ┌─────────────────────┐
-│     AUDIT LEDGER    │  ← Immutable. Append-only. Always records.
+     AUDIT LEDGER       ← Structured. Append-oriented. Records decisions and outcomes.
 └─────────────────────┘
 ```
 
@@ -121,7 +121,7 @@ AI recommends. Humans authorize. Systems execute. Verification confirms. Audit r
 ┌──────────────────────────┐  ┌────────────────────────────────┐
 │    Node.js / Express     │  │     Google Workspace APIs      │
 │  Server-side Gemini AI   │  │  Sheets API v4 · Drive API     │
-│  Zero Public Key Leaks   │  │  10-Tab Schema · Bidirectional │
+│  Secrets kept server-side│  │  10-Tab Schema · Bidirectional │
 └──────────────────────────┘  └────────────────────────────────┘
 ```
 
@@ -197,6 +197,23 @@ UNKNOWNS          unconfirmed — never treated as fact
 
 ---
 
+## Security & Data Protection
+
+RiskOps follows a defense-in-depth approach across identity, AI usage, synchronization, and operational execution.
+
+- **Secrets:** API keys, credentials, and OAuth tokens must remain outside source control and logs.
+- **Access:** Google Workspace integrations should use least-privilege authorization and restricted workbooks.
+- **AI:** AI output is advisory only. Sensitive information should not be submitted to AI services unless explicitly approved.
+- **Synchronization:** Schema validation, import previews, three-way conflict detection, external-change detection, and protected fields help prevent unsafe data mutations.
+- **Privacy:** Production deployments should apply appropriate access controls, retention, deletion, and data-handling requirements.
+- **Demonstration Data:** Public repository content and screenshots should contain only synthetic or anonymized data.
+- **Production Security:** Deployments require environment-specific security controls, monitoring, secrets management, and vulnerability management.
+
+> Framework references such as SOC 2, ISO 27001, NIST CSF, HIPAA, and GDPR represent governance/control mapping capabilities and do not constitute certification or legal compliance.
+
+### Security Reporting
+
+Please report security vulnerabilities privately rather than through public GitHub issues. Do not disclose credentials, tokens, personal data, production incident information, or confidential organizational information publicly.
 ## Bidirectional Sync Architecture
 
 ```
@@ -244,8 +261,8 @@ LOCAL RISKOPS STATE
 | `02_Risk_Rules` | Detection rules, thresholds, risk logic | Rule_ID |
 | `03_Escalations` | Escalation tiers and response targets | Escalation_ID |
 | `04_SLA` | MTTA/MTTR targets, breach tracking | SLA_ID |
-| `05_Audit_Log` | Chronological immutable audit events | Audit_ID |
-| `06_Config` | Workspace configuration | Config_Key |
+| `05_Audit_Log` | Chronological structured audit events | Audit_ID || 
+|`06_Config` | Workspace configuration | Config_Key |
 | `07_Dashboard` | Aggregate operational metrics | Metric_Key |
 | `08_Decision_Register` | Decisions, approvals, governance records | Decision_ID |
 | `09_Automation_Log` | Playbook execution and rollback history | Execution_ID |

@@ -1,0 +1,6 @@
+{
+  "name": "RiskOps Intelligence & Automation Hub",
+  "description": "Enterprise operational risk management, real-time threat intelligence, automated triage workflows, compliance audits, and bidirectional Google Sheets synchronization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
